@@ -8,6 +8,51 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+      <!-- Login Popup Modal -->
+<div class="modal-overlay" id="loginModal">
+  <div class="modal-container">
+    <button type="button" class="close-modal" id="closeModal">&times;</button>
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-logo">
+          <img src="./favicon.png" alt="Skykash Logo" />
+          <h2>Skykash</h2>
+        </div>
+        <h3>Welcome Back!</h3>
+        <p>Log in to continue</p>
+      </div>
+
+      <form id="loginForm" class="modal-form">
+        <div class="form-group">
+          <label for="modalEmail">Email Address</label>
+          <input type="email" id="modalEmail" placeholder="Enter your email" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="modalPassword">Password</label>
+          <input type="password" id="modalPassword" placeholder="Enter your password" required>
+        </div>
+
+        <div class="form-options">
+          <label class="checkbox-label">
+            <input type="checkbox" id="modalRemember">
+            <span>Remember me</span>
+          </label>
+          <a href="#" class="forgot-link">Forgot Password?</a>
+        </div>
+        
+        <button type="submit" class="modal-btn-primary">Log In</button>
+        
+        <div class="modal-divider">
+          <span>or</span>
+        </div>
+
+        <p class="modal-footer-text">Don't have an account? <a href="./register/register.html" class="signup-link">Sign Up</a></p>
+      </form>
+    </div>
+  </div>
+</div>
+    
     <div class="particles" id="particles"></div>
 
     <div id="page">
@@ -18,8 +63,8 @@
             </h1>
             <div class="nav-links">
                 <a href="./index.html" class="nav">Home</a>
-                <a href="./register/register.html" class="nav">Register</a>
-                <a href="./login/login.html" class="nav">Login</a>
+                <a href="./register.html" class="nav">Register</a>
+                <a href="./login.html" class="nav">Login</a>
                 <a href="#Menu" onclick="openSidebar()" class="nav menu-btn">Menu</a>
             </div>
         </nav>
@@ -28,7 +73,7 @@
             <h2>WELCOME TO SKYKASH!</h2>
             <h1>Know when to book flights,<br>without overpaying.</h1>
             <div class="button-group">
-                <button class="btn btn-primary" onclick="window.location.href='../booking/booking.html'">Book Ticket</button>
+                <button class="btn btn-primary" onclick="window.location.href='./booking.html'">Book Ticket</button>
                 <button class="btn btn-secondary">Predict Price</button>
             </div>
         </div>
@@ -133,51 +178,5 @@
 
     <script src="script.js"></script>
 </body>
-<body>
-  <!-- Login Popup Modal -->
-<div class="modal-overlay" id="loginModal">
-  <div class="modal-container">
-    <button type="button" class="close-modal" id="closeModal">&times;</button>
-    <div class="modal-content">
-      <div class="modal-header">
-        <div class="modal-logo">
-          <img src="./favicon.png" alt="Skykash Logo" />
-          <h2>Skykash</h2>
-        </div>
-        <h3>Welcome Back!</h3>
-        <p>Log in to continue</p>
-      </div>
-
-      <form id="loginForm" class="modal-form">
-        <div class="form-group">
-          <label for="modalEmail">Email Address</label>
-          <input type="email" id="modalEmail" placeholder="Enter your email" required>
-        </div>
-        
-        <div class="form-group">
-          <label for="modalPassword">Password</label>
-          <input type="password" id="modalPassword" placeholder="Enter your password" required>
-        </div>
-
-        <div class="form-options">
-          <label class="checkbox-label">
-            <input type="checkbox" id="modalRemember">
-            <span>Remember me</span>
-          </label>
-          <a href="#" class="forgot-link">Forgot Password?</a>
-        </div>
-        
-        <button type="submit" class="modal-btn-primary">Log In</button>
-        
-        <div class="modal-divider">
-          <span>or</span>
-        </div>
-
-        <p class="modal-footer-text">Don't have an account? <a href="./register/register.html" class="signup-link">Sign Up</a></p>
-      </form>
-    </div>
-  </div>
-</div>
-
-</body>
 </html>
+
